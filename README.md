@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# React Quiz App with Timer and Difficulty Selection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+There are several key components and functions that work together to create an engaging quiz application. One of the main functions, shuffleArray, is responsible for randomizing the contents of an array, which allows for a more dynamic and varied experience for the user by shuffling the answer options for each quiz question.
 
-In the project directory, you can run:
+To fetch the quiz questions and answers, I utilized the Open Trivia Database API in the fetchQuizData function. This function retrieves the necessary data based on the user's selected difficulty level and number of questions. The data is then formatted to include the shuffled answer options, ensuring a unique quiz experience for each user.
 
-### `npm start`
+The Modal component is responsible for displaying the user's final score at the end of the quiz, along with a button to restart the quiz if desired. The QuestionCard component renders each individual quiz question and its answer options, keeping track of the user's score and question count. It utilizes the approvedChoice function to determine whether the user's selected answer is correct and updates the score accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To allow the user to select the difficulty level of the quiz, the Selects component creates a dropdown menu. The Intro component welcomes the user with an image, the difficulty level dropdown menu, and a start quiz button. Finally, the Quiz component brings all of these components together and fetches the quiz data based on the selected difficulty level and number of questions. The Quiz component passes the necessary data and functions as props to the other components to ensure seamless functionality of the quiz application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Technologies Used
 
-### `npm test`
+-   React
+-   JavaScript
+-   HTML
+-   SCSS
+-   MUI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How It Works
 
-### `npm run build`
+This is a ReactJS quiz application that has an Introduce component and a QuestionCard component. The Introduce component is the first page of the quiz where users can select the difficulty level of the quiz and start the quiz by clicking on the "Start Quiz" button. The QuestionCard component is the actual quiz where users have 30 seconds to answer each question, and the application keeps track of the user's score. After answering all 20 questions or when the timer runs out, a modal appears with the user's final score and a "Restart" button. The code is well-organized and uses functional components with React hooks to manage state and side-effects. Additionally, the CSS is also well-structured, making it easy to understand and modify.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To run this project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-   Clone the repository to your local machine
+-   Install the necessary dependencies using **npm install**
+-   Start the development server using **npm start**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+##Contact
+evrenn.unal@gmail.com
