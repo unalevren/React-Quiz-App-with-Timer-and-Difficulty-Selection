@@ -28,5 +28,5 @@ To run this project locally, follow these steps:
 -   Install the necessary dependencies using **npm install**
 -   Start the development server using **npm start**
 
-##Contact
+## Contact
 evrenn.unal@gmail.com
